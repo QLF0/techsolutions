@@ -63,6 +63,7 @@ CREATE TABLE `pc_components` (
 
 LOCK TABLES `pc_components` WRITE;
 /*!40000 ALTER TABLE `pc_components` DISABLE KEYS */;
+INSERT INTO `pc_components` VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(2,11),(2,12),(2,13),(2,14),(2,15),(2,16),(2,17),(2,18),(2,19),(2,20),(3,21),(3,22),(3,23),(3,24),(3,25),(3,26),(3,27),(3,28),(3,29),(3,30),(3,31),(4,32),(4,33),(4,34),(4,35),(4,36),(4,37),(4,38),(4,39),(4,40),(4,41),(4,42),(5,43),(5,44),(5,45),(5,46),(5,47),(5,48),(5,49),(5,50),(5,51),(5,52),(6,53),(6,54),(6,55),(6,56),(6,57),(6,58),(6,59),(6,60),(6,61),(6,62),(7,63),(7,64),(7,65),(7,66),(7,67),(7,68),(7,69),(7,70),(7,71),(7,72),(8,73),(8,74),(8,75),(8,76),(8,77),(8,78),(8,79),(8,80),(8,81),(8,82),(8,83);
 /*!40000 ALTER TABLE `pc_components` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -79,7 +80,7 @@ CREATE TABLE `pcs` (
   `image_url` varchar(255) NOT NULL,
   `price` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,7 +89,7 @@ CREATE TABLE `pcs` (
 
 LOCK TABLES `pcs` WRITE;
 /*!40000 ALTER TABLE `pcs` DISABLE KEYS */;
-INSERT INTO `pcs` VALUES (1,'TechSolutions Core','https://picsum.photos/seed/pc1/400/260',549.00),(2,'TechSolutions Gamer','https://picsum.photos/seed/pc2/400/260',779.00),(3,'TechSolutions Creator','https://picsum.photos/seed/pc3/400/260',999.00);
+INSERT INTO `pcs` VALUES (1,'pc pour le  Développement logiciel','https://media.ldlc.com/r1600/ld/products/00/06/00/63/LD0006006315.jpg',549.00),(2,'pc pour la Gestion des infrastructures systèmes et réseau','https://www.grosbill.com/images_produits/4ffc5d41-10c9-4ab0-a1f4-f7b7a7fa6df8.jpg',779.00),(3,' pc pour le Design UX/UI ','https://www.pc21.fr/img-prod/petit/FGS0352-2-2689.jpg',999.00),(4,' pc pour le support client ','https://www.grosbill.com/images_produits/4ffc5d41-...',0.00),(5,'pc pour le Marketing et vente \r\n','https://m.media-amazon.com/images/I/71i8gw20ZpL.jpg',0.00),(6,'pc pour les Ressources humaines et administration ','https://www.grosbill.com/images_produits/4ffc5d41-...',0.00),(7,'pc pour la Direction ','https://www.grosbill.com/images_produits/4ffc5d41-...',0.00),(8,'pc pour le support client ayant un handicap visuel','https://www.grosbill.com/images_produits/4ffc5d41-...',0.00);
 /*!40000 ALTER TABLE `pcs` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -101,4 +102,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-02 14:40:27
+-- Dump completed on 2025-12-12  8:58:31
